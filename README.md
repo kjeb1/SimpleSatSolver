@@ -8,10 +8,10 @@ iff ¬A is invalid. By using refutation calculus we can say:
 - If at least one branch leaf is an axiom: the formula is satisifiable
 - If all branch leafs are non-axioms: the formula is unsatisifiable
 Since we start with a formula in conjunctive normal form (CNF), we only need to deal with the ∨-rule and the ∧-rule.
-We will need to split branches for the∨, but for ∧ we will only iterate through them.
+We will need to split branches for the ∨, but for ∧ we will only iterate through them.
 
-For interpretation, we know that at least one non-axiom leaf branch will satisfy the for-
-mula. So a interpretation that satisfy that leaf branch will be enough. The interpretation of
+For interpretation, we know that at least one non-axiom leaf branch will satisfy the formula.
+So a interpretation that satisfy that leaf branch will be enough. The interpretation of
 the rest leaf branches doesn’t matter.
 
 In the Python program the literals will be strings in lowercase or uppercase characters (a silly idea, actually).
@@ -33,3 +33,8 @@ To solve ¬p∧(¬p∨ ¬q∨r)∧q, run satSolver([[’P’], [’P’,’Q’,
 See tests in tester.py
 
 
+## resolutionSatSolver.py
+I decided to make a satsolver based on resolution calculus as well. It turns out to be a little 
+more simplier to implement (fewer lines with code). But without any optimization, it uses a ridiculous 
+amount of memory if we have more than a few clauses.<br>
+See tests in resolutionTester.py
