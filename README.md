@@ -1,6 +1,6 @@
 
 ## satSolver.py
-This very simple SAT solver is based on one-sided sequent calculus. It is made for my own educational purpose.
+This very simple SAT solver is based on one-sided sequent calculus. It is made for my own educational purpose, and I hope things are correct. This is "pure" sequent calculus, no optimization whatsoever.
 
 We use "proof by contradiction". The axiom is then A and ¬A. We know that if all leaf sequents 
 are axioms, then the formula is valid; otherwise, it is invalid. That means A is satisfiable 
