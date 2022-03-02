@@ -1,6 +1,6 @@
 
 ## satSolver.py
-This very simple SAT solver is based on one-sided sequent calculus. It is made for my own educational purpose, and I hope the logic are correct. This is "pure" sequent calculus, no optimization whatsoever.
+This very simple <a href="https://en.wikipedia.org/wiki/SAT_solver">SAT solver</a> is based on one-sided <a href="https://en.wikipedia.org/wiki/Sequent_calculus">sequent calculus</a>. It is made for my own educational purpose, and I hope the logic are correct. This is "pure" sequent calculus, no optimization whatsoever.
 
 We use "proof by contradiction". The axiom is then A and ¬A. We know that if all leaf sequents 
 are axioms, then the formula is valid; otherwise, it is invalid. That means A is satisfiable 
@@ -35,7 +35,7 @@ See tests in tester.py
 
 
 ## resolutionSatSolver.py
-I decided to make a satsolver based on resolution calculus as well. It turns out to be a little 
+I decided to make a satsolver based on <a href="https://en.wikipedia.org/wiki/Resolution_(logic)">resolution calculus</a> as well. It turns out to be a little 
 more simplier to implement (fewer lines with code). But without any optimization, it uses a ridiculous 
 amount of memory if we have more than a few clauses.<br>
 See tests in resolutionTester.py
